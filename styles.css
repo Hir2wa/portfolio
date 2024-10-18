@@ -1,0 +1,112 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #007bff; /* A nice blue color */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.project {
+    margin-bottom: 15px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #007bff;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px; /* Adjust space between items */
+    margin-top: 20px;
+}
+
+.project {
+    border: 1px solid #ccc; /* Add a border around each project */
+    padding: 20px; /* Add padding inside the project cards */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+    transition: transform 0.3s; /* Animation effect */
+}
+
+.project:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns per row */
+    gap: 15px; /* Space between items */
+    margin-top: 20px;
+}
+
+.skill {
+    border: 1px solid #ccc; /* Border for each skill */
+    padding: 15px; /* Padding inside the skill boxes */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f0f0f0; /* Light background */
+    text-align: center; /* Center text */
+    transition: background-color 0.3s; /* Animation effect */
+}
+
+.skill:hover {
+    background-color: #e0e0e0; /* Change background on hover */
+}
+
